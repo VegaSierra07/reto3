@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reto_2_MisionTIC</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="category.js"></script>
+
+<body>
+	<div style="text-align: center;">
+		<a href="./../menu.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A MENU"></a>
+		<a href="./../Boat/boat.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A BARCOS"></a>
+		<a href="./../Client/client.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A CLIENTES"></a>
+		<a href="./../Admin/Admin.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A ADMINISTRADORES"></a>
+		<a href="./../Message/message.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A MENSAJES"></a>
+		<a href="./../Reservation/reservation.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A RESERVACIONES"></a>
+		<a href="./../Score/score.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A SCORES"></a>
+	</div>
+	<h1 style="font-size:30px; font-family: fantasy; text-align: center;">CATEGORIAS</h1>
+
+	<div style="font-size: 15px; font-family: fantasy; text-align: center; padding: 8px;">
+
+		<!--Id de categoria: <br>
+		<input type="number" id="idCategoria" placeholder="Id Categoria"><br><br>-->
+
+		Nombre de categoria:<br>
+		<input type="text" id="nombreCategoria" placeholder="Nombre Categoria"><br><br>
+
+		Descripción de categoria:<br>
+		<input type="text" id="descripcionCategoria" placeholder="Correo Categoria"><br><br>
+	</div>
+
+	<div style="text-align: center;">
+		<button onclick="guardarCategoria()" style="font-size: 15px; font-family: fantasy;">GUARDAR CATEGORIA</button>
+		<!--<button onclick="editarCategoria()" style="font-size: 15px; font-family: fantasy;">ACTUALIZAR CATEGORIA</button>-->
+		<button onclick="leerCategoria()" style="font-size: 15px; font-family: fantasy;">TRAER CATEGORIA</button>
+	</div>
+		
+	<div style="text-align: center; padding-top:30px ;">
+		<table style="border: 1px solid black; font-family: monospace; font-size: 15px;" align="center">
+		  	<thead>
+			  	<tr style="font-size: 20px; font-weight: bold; ">
+				    <th style="border: 1px solid black;">ID</th>
+				    <th style="border: 1px solid black;">NOMBRE</th>
+				    <th style="border: 1px solid black;">DESCRIPCIÓN</th>
+					<!--<th style="border: 1px solid black;">BORRAR</th>-->
+				</tr>
+			</thead>
+			<tbody id="listaCategorias">
+			  	
+			</tbody>
+		</table>
+    </div>
+
+</body>
+</html>

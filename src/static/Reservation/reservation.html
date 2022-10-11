@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reto_2_MisionTIC</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="reservation.js"></script>
+
+<body>
+	<div style="text-align: center;">
+		<a href="./../menu.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A MENU"></a>
+		<a href="./../Boat/boat.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A BARCOS"></a>
+		<a href="./../Client/client.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A CLIENTES"></a>
+		<a href="./../Admin/Admin.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A ADMINISTRADORES"></a>
+		<a href="./../Message/message.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A MENSAJES"></a>
+		<a href="./../Category/category.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A CATEGORIAS"></a>
+		<a href="./../Score/score.html"><input style="font-size: 30px; font-family: fantasy;" type="button" value="IR A SCORES"></a>
+	</div>
+	<h1 style="font-size:30px; font-family: fantasy; text-align: center;">RESERVACION</h1>
+
+	<div style="font-size: 15px; font-family: fantasy; text-align: center; padding: 8px;">
+		<!--Id Reservacion: <br>
+		<input type="number" id="idReservacion" placeholder="Id"><br><br>-->
+
+		Fecha inicial:<br>
+		<input type="text" id="fechaInicial" placeholder="Inicial"><br><br>
+
+		Fecha devolución:<br>
+		<input type="text" id="fechaFinal" placeholder="Final"><br><br>
+
+		Cliente:<br>
+		<input type="text" id="idCliente" placeholder="Id Cliente"><br><br>
+
+		Barco:<br>
+		<input type="text" id="idBarco" placeholder="Id Barco"><br><br>
+	</div>
+
+	<div style="text-align: center;">
+		<button onclick="guardarReservacion()" style="font-size: 15px; font-family: fantasy;">GUARDAR RESERVACIÓN</button>
+		<!--<button onclick="editarMensaje()" style="font-size: 15px; font-family: fantasy;">ACTUALIZAR MENSAJE</button>-->
+		<button onclick="leerReservacion()" style="font-size: 15px; font-family: fantasy;">TRAER RESERVACIÓN</button>
+	</div>
+		
+	<div style="text-align: center; padding-top:30px ;">
+		<table style="border: 1px solid black; font-family: monospace; font-size: 15px;" align="center">
+		  	<thead>
+			  	<tr style="font-size: 20px; font-weight: bold; ">
+				    <th style="border: 1px solid black;">ID</th>
+				    <th style="border: 1px solid black;">FECHA INICIAL</th>
+					<th style="border: 1px solid black;">FECHA FINAL</th>
+					<th style="border: 1px solid black;">CLIENTE</th>
+					<th style="border: 1px solid black;">BARCO</th>
+				    <!--<th style="border: 1px solid black;">BORRAR</th>-->
+				</tr>
+			</thead>
+			<tbody id="listaReservaciones">
+			  	
+			</tbody>
+		</table>
+    </div>
+
+</body>
+</html>
